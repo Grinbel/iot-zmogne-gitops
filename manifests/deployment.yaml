@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iot-app
+  labels:
+    app: iot-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iot-app
+  template:
+    metadata:
+      labels:
+        app: iot-app
+    spec:
+      containers:
+        - name: iot-app
+          image: <DOCKERHUB_USERNAME>/iot-app:v1   # TODO: fill in, this is the line you'll bump to v2
+          ports:
+            - containerPort: 8888
