@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: iot-app
-          image: <DOCKERHUB_USERNAME>/iot-app:v1   # TODO: fill in, this is the line you'll bump to v2
+          image: grinbel/iot-app:v1
           ports:
             - containerPort: 8888
