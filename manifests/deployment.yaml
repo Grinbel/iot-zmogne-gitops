@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: iot-app
-          image: grinbel/iot-app:v1
+          image: grinbel/iot-app:v2
           ports:
             - containerPort: 8888
