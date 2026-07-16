@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: iot-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: iot-app
-          image: grinbel/iot-app:v1
+          image: grinbel/iot-app:v2
           ports:
             - containerPort: 8888
